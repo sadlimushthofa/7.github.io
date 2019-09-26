@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* clear float */
+.clear{
+    clear: both;
+}
+
+/* navbar */
+header{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fc4a1a;
+}
+
+.logo{
+    color: #fc4a1a;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+img.logo{
+    float: left;
+    margin: auto;
+}
+
+header .search-box{
+    margin: 0 0 0 20px;
+    float: left;
+    line-height: 60px;
+}
+header .search-box input{
+    height: 35px;
+    padding: 3px 30px 3px 10px;
+    position: relative;
+    width: 250px;
+    border: 1px solid #fc4a1a;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+}
+
+header .search-box i{
+    position: relative;
+    left: -30px;
+    cursor: pointer;
+    color: #fc4a1a;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    font-size: 13px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+}
+
+header nav ul li a:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 5px solid #fc4a1a;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3px;
+    position: relative;
+    top: -17px;  
+}
+
+header nav ul li a:hover, header nav ul li a.active{
+    color:  #fc4a1a;
+}
+
+.toggle{
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 60px;
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
+.toggle:hover{
+    color: #fc4a1a;
+}
+/* end Navbar */
+.sromben{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+}
+
+.garis-bawah{
+    width: 250px;
+    border: 2px solid #fc4a1a;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* content */
+.content{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+}
+.all-content{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.all-content h2{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.all-content .garis-bawah-judul{
+    width: 250px;
+    border: 2px solid #fc4a1a;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.wrap-all-article{
+    margin: 12px;
+    display: inline-block;
+    width: 290px;
+    height: 375px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.img img{
+    width: 290px;
+    height: 170px;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0 ;
+}
+.img{
+    position: relative;
+}
+
+.img .tema{
+    width: 80px;
+    border-radius: 50px;
+    height: 20px;
+    font-size: 12px;
+    color: white;
+    line-height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.img .tema-bayi{
+    background: #3670d2;
+}
+
+.img .tema-parenting{
+    background: #6ACB02;
+}
+
+.article-content{
+    text-align: left;
+    padding: 15px 10px 10px 10px;
+    height: 202px;
+    overflow: hidden;
+}
+
+.article-content .judul{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.article-content .isi{
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 10px;
+    letter-spacing: 0.2mm;
+}
+
+.article-content .selengkapnya{
+    text-decoration: none;
+    font-size: 14px;
+    color: #3670d2;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    position: relative;
+    bottom: 0px;
+}
+
+.selanjutnya{
+    margin: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius:30px;
+    border: 1px solid #fc4a1a; 
+    background: #fff;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fc4a1a;
+    cursor: pointer;
+}
+
+.selanjutnya:hover{
+    background: #fc4a1a;
+    color: #fff;
+}
+/* end content */
+
+
+/* form pesan */
+form{
+    width: 70%;
+    margin: 0px auto;
+    background:  #fc4a1a;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+form .form-group{
+    margin: 5px auto;
+}
+
+.form-group label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form .form-control{
+    width: 100%;
+    font-size: 17px;
+    padding: 3px 10px;
+    height: 38px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #333;
+}
+
+form button{
+    width: 150px;
+    height: 45px;
+    background: #383636;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* end form pesan */
+
+/* footer */
+footer{
+    width: 100%;
+}
+
+footer .top-footer{
+    height: 300px;
+    border-top: 2px solid #fc4a1a;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+img .logo2{
+    float: left;
+    margin: auto;
+}
+
+.top-footer .logo{
+    display: block;
+}
+
+.top-footer .info{
+    width: 325px;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+.top-footer p{
+    display: inline;
+}
+footer .bottom-footer{
+    width: 100%;
+    height: 40px;
+    background: #fc4a1a;
+}
+
+footer .bottom-footer p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    color: #fff;
+}
+/* end footer */
+
+@media (max-width: 991.98px){
+    /* navbar */
+    header{
+        padding: 0 20px;
+    }
+
+    header .search-box input{
+        height: 31px;
+        padding: 3px 20px 3px 10px;
+        position: relative;
+        width: 200px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 62px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active{
+        left: 0;
+    }
+
+    header nav ul li a{
+      color: #fff;
+    }
+
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a{
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0.2);
+    }
+
+    header nav ul li a:hover::after{
+        display: none;
+    }
