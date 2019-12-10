@@ -409,3 +409,49 @@
     color: #fff;
     font-weight: bold;
 }
+
+/* Kolom Komentar */
+
+.comment-box{
+    margin-top: 150px;
+}
+
+.comment-box h4{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.comment-box textarea{
+    resize: none;
+    float: left;
+    font-size: 15px;
+    padding: 5px;
+    width: 80%;
+    height: 138px;
+    
+}
+
+.comment-box button{
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px 25px;
+    background: royalblue;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px){
+    .comment-box textarea{
+        width: 90%;
+        height: 100px;
+        
+    }
+
+    .comment-box button{
+        margin-top: 10px;
+     
+    }
+    
+}
