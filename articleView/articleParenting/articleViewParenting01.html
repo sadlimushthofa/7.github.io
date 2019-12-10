@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/articleView.css">
     <link rel="stylesheet" href="../../css/menuView.css">
+    <link rel="stylesheet" href="../../css/healthTools.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -37,7 +38,7 @@
 
         <nav>
             <ul>
-                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="../../index.html">HOME</a></li>
                 <li class="sub-menu"><a>ARTIKEL</a>
                     <ul>
                         <li><a href="../../bayi.html">BAYI</a></li>
@@ -46,6 +47,7 @@
                         <li><a href="../../parenting.html">PARENTING</a></li>
                     </ul>
                 </li>
+                <li><a href="../../obat.html">obat</a></li>
                 <li><a href="../../aboutUs.html">TENTANG KAMI</a></li>
                 <li class="sub-menu"><a>MASUK/DAFTAR</a>
                     <ul>
@@ -159,6 +161,12 @@
                     <a href=""><img src="../../img/gp.png" alt=""></a>
                     <a href=""><img src="../../img/wa.png" alt=""></a>
                 </div>
+
+                <div class="comment-box">
+                    <h4>0 Komentar</h4>
+                    <textarea name="" id=""></textarea>
+                    <button type="submit">KIRIM</button>
+                </div>
             </div>
         </div>
         <div class="main-b">
@@ -255,11 +263,10 @@
             <div class="healthToolsInArticleView">
                 <h3>HEALTH TOOLS</h3>
                 <div class="buttonsInArticleView">
-                    <a href="../../formBBI.html"><button class="btn-hover color-1">Hitung berat badan ideal
+                    <a><button class="btn-hover color-1" id="myBtn">Hitung berat badan ideal bayi</button></a>
+                    <a> <button class="btn-hover color-2" id="myBtn1">Hitung tinggi badan ideal
                             bayi</button></a>
-                    <a href="../../formTBI.html"><button class="btn-hover color-2">Hitung tinggi badan ideal
-                            bayi</button></a>
-                    <a href="../../formKI.html"><button class="btn-hover color-3">Kalender Imunisasi</button></a>
+                    <a> <button class="btn-hover color-3" id="myBtn2">Kalender Imunisasi</button></a>
 
                 </div>
 
@@ -267,6 +274,110 @@
             </div>
         </div>
     </div>
+
+    <!-- modal bbi -->
+    <div class="modalHT" id="modal">
+        <!-- form BBI -->
+        <form action="" class="cf ht" method="GET">
+            <div class="close-modal">
+                <img src="../../img/close.png" alt="" srcset="">
+            </div>
+            <h2>
+                Berat Badan Ideal Bayi
+            </h2>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama">
+            </div>
+
+            <div class="form-group">
+                <label for="jenis">Jenis Kelamin</label>
+                <select class="form-control">
+                    <option>-- Pilih Jenis Kelamin --</option>
+                    <option value="">Laki-Laki</option>
+                    <option value="">Perempuan</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label style="margin-right: 20px;" for="usia">Usia (0-24 bulan)</label>
+                <input type="number" id="tanggal" class="form-control" required>
+            </div>
+
+            <button type="submit" id="hasil" class="btn btn-primary">Cek</button>
+        </form>
+        <!-- end form BBI -->
+    </div>
+    <!-- end modal BBI -->
+
+    <!-- modal TBI -->
+    <div class="modalHT" id="modal1">
+        <!-- form TBI -->
+        <form action="" class="cf ht" method="GET">
+            <div class="close-modal">
+                <img src="../../img/close.png" alt="" srcset="">
+            </div>
+            <h2>
+                Tinggi Badan Ideal Bayi
+            </h2>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama">
+            </div>
+
+            <div class="form-group">
+                <label for="jenis">Jenis Kelamin</label>
+                <select class="form-control">
+                    <option>-- Pilih Jenis Kelamin --</option>
+                    <option value="">Laki-Laki</option>
+                    <option value="">Perempuan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-right: 20px;" for="usia">Usia (0-24 bulan)</label>
+                <input type="number" id="tanggal" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="panjang">Tinggi Badan (cm)</label>
+                <input type="number" min="0" id="panjang" class="form-control"
+                    placeholder="Masukkan Tinggi Badan Saat Lahir">
+            </div>
+            <button type="submit" id="hasil" class="btn btn-primary">Cek</button>
+        </form>
+
+        <!-- end form TBI -->
+
+    </div>
+
+    <!-- modal KI -->
+    <div class="modalHT" id="modal2">
+        <!-- form imunisasi -->
+        <form action="" class="cf ht" method="GET">
+            <div class="close-modal">
+                <img src="../../img/close.png" alt="" srcset="">
+            </div>
+            <h2>
+                Kalender Imunisasi Bayi
+            </h2>
+            <div class="form-group">
+                <label id="nama" for="nama">Nama</label>
+                <input type="text" id="inputNama" class="form-control" placeholder="Masukkan Nama" required>
+            </div>
+
+
+            <div class="form-group">
+                <label style="margin-right: 20px;" for="usia">Usia (0-24 bulan)</label>
+                <input type="number" class="form-control" required>
+            </div>
+            <button type="submit" id="hasil" class="btn btn-primary">Cek</button>
+
+        </form>
+        <!-- end form imunisasi -->
+    </div>
+    <!-- end modal KI -->
 
     <a class="scrollTop page-scroll" href="#home"><i class="fa fa-angle-up"></i></a>
 
