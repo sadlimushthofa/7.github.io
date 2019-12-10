@@ -32,12 +32,12 @@
     <!-- navbar -->
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
         </div>
 
         <nav>
             <ul>
-                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li class="sub-menu"><a>artikel</a>
                     <ul>
                         <li><a href="bayi.html">bayi</a></li>
@@ -46,8 +46,9 @@
                         <li><a href="parenting.html">parenting</a></li>
                     </ul>
                 </li>
+                <li><a href="obat.html">obat</a></li>
                 <li><a href="aboutUs.html">tentang kami</a></li>
-                <li class="sub-menu"><a>masuk/daftar</a>
+                <li class="active sub-menu"><a>masuk/daftar</a>
                     <ul>
                         <li><a href="formLogin.html">masuk</a></li>
                         <li><a href="formRegister.html">daftar</a></li>
@@ -88,12 +89,15 @@
                 </div>
 
                 <div class="fg">
-                    <input type="password" id="pass" required>
+                    <input type="password" id="password-field" required>
                     <label for="password">Kata Sandi</label>
+                    <div id="btnEye"> <span toggle="#password-field"
+                            class="fa fa-fw fa-eye field-icon toggle-password"></span></div>
+
                 </div>
 
                 <div class="fg">
-                    <input type="password" id="re-pass" required>
+                    <input type="password" id="repass" required>
                     <label for="re-password">Ulangi Kata Sandi</label>
                 </div>
 
